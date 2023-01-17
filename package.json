@@ -36,7 +36,6 @@
         "webpack-dev-server": "^4.9.0",
         "webpack-merge": "^4.2.2"
     },
-    "type": "module",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/NUKnightLab/TimelineJS3.git"
@@ -53,7 +52,7 @@
         "disttest": "npm run dist && http-server dist -o '/embed/index.html?debug=true&language=es&script_path='",
         "compare": "npm run dist && http-server dist -o '/embed/compare.html'",
         "clean": "trash dist",
-        "build": "webpack --config webpack.prod.js && node tasks/compile_less.js",
+        "build": "webpack --config webpack.prod.cjs && node tasks/compile_less.js",
         "start": "npx webpack serve --open --config webpack.dev.js",
         "stage": "npm run dist && node tasks/stage.js",
         "stage_latest": "npm run dist && node tasks/stage.js latest",
