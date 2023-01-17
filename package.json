@@ -36,6 +36,7 @@
         "webpack-dev-server": "^4.9.0",
         "webpack-merge": "^4.2.2"
     },
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/NUKnightLab/TimelineJS3.git"
