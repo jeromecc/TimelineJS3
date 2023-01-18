@@ -994,5 +994,3 @@ export class Timeline {
 }
 
 classMixin(Timeline, I18NMixins, Events)
-
-export { Timeline }
