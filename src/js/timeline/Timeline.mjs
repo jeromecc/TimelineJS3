@@ -1,19 +1,19 @@
-import DOM from "../dom/DOM.js"
-import { addClass } from "../dom/DOMUtil.js"
-import { hexToRgb, mergeData, classMixin, isTrue, trace, addTraceHandler } from "../core/Util.js";
-import { easeInOutQuint, easeOutStrong } from "../animation/Ease.js";
-import Message from "../ui/Message.js"
-import { Language, fallback, loadLanguage } from "../language/Language.js"
-import { I18NMixins } from "../language/I18NMixins.js";
-import Events from "../core/Events.js";
-import { makeConfig } from "../core/ConfigFactory.js"
-import { TimelineConfig } from "../core/TimelineConfig.js"
-import { TimeNav } from "../timenav/TimeNav.js"
-import Browser from "../core/Browser.js"
-import { Animate } from "../animation/Animate.js"
-import { StorySlider } from "../slider/StorySlider.js"
-import { MenuBar } from "../ui/MenuBar.js"
-import { loadCSS, loadJS } from "../core/Load.js";
+import * as DOM from "../dom/DOM"
+import { addClass } from "../dom/DOMUtil"
+import { hexToRgb, mergeData, classMixin, isTrue, trace, addTraceHandler } from "../core/Util";
+import { easeInOutQuint, easeOutStrong } from "../animation/Ease";
+import Message from "../ui/Message"
+import { Language, fallback, loadLanguage } from "../language/Language"
+import { I18NMixins } from "../language/I18NMixins";
+import Events from "../core/Events";
+import { makeConfig } from "../core/ConfigFactory"
+import { TimelineConfig } from "../core/TimelineConfig"
+import { TimeNav } from "../timenav/TimeNav"
+import * as Browser from "../core/Browser"
+import { Animate } from "../animation/Animate"
+import { StorySlider } from "../slider/StorySlider"
+import { MenuBar } from "../ui/MenuBar"
+import { loadCSS, loadJS } from "../core/Load";
 
 let script_src_url = null;
 if (document) {
@@ -60,7 +60,7 @@ function make_keydown_handler(timeline) {
  * @param {object} [options] - a JavaScript object specifying 
  *     presentation options
  */
-export class Timeline {
+class Timeline {
     constructor(elem, data, options) {
         if (!options) {
             options = {}
@@ -994,3 +994,5 @@ export class Timeline {
 }
 
 classMixin(Timeline, I18NMixins, Events)
+
+export { Timeline }
