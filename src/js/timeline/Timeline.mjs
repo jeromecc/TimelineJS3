@@ -60,7 +60,7 @@ function make_keydown_handler(timeline) {
  * @param {object} [options] - a JavaScript object specifying 
  *     presentation options
  */
-class Timeline {
+export class Timeline {
     constructor(elem, data, options) {
         if (!options) {
             options = {}

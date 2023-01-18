@@ -82,7 +82,7 @@
         //
         "process": [
             {
-                "src": "source/js/TL.Timeline.js",
+                "src": "source/js/TL.Timeline.mjs",
                 "dst": "build/js/timeline.js"
             },
             {

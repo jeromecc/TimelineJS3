@@ -1,6 +1,9 @@
-3.9.2 (not yet released)
+3.10.0 (not yet released)
 -------------------------
-* #796 support Wikipedia image page URLs
+* purge Google analytics
+* Use ES Modules for exports
+
+ #796 support Wikipedia image page URLs
 * #808 Add support for en-GB locale (UK-style date formatting, eg 2 Dec 2022)
 * #814 Ensure that buttons are created with type="button"
 
