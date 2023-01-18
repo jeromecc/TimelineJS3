@@ -1,19 +1,19 @@
-import * as DOM from "../dom/DOM"
-import { addClass } from "../dom/DOMUtil"
-import { hexToRgb, mergeData, classMixin, isTrue, trace, addTraceHandler } from "../core/Util";
-import { easeInOutQuint, easeOutStrong } from "../animation/Ease";
-import Message from "../ui/Message"
-import { Language, fallback, loadLanguage } from "../language/Language"
-import { I18NMixins } from "../language/I18NMixins";
-import Events from "../core/Events";
-import { makeConfig } from "../core/ConfigFactory"
-import { TimelineConfig } from "../core/TimelineConfig"
-import { TimeNav } from "../timenav/TimeNav"
-import * as Browser from "../core/Browser"
-import { Animate } from "../animation/Animate"
-import { StorySlider } from "../slider/StorySlider"
-import { MenuBar } from "../ui/MenuBar"
-import { loadCSS, loadJS } from "../core/Load";
+import * as DOM from "../dom/DOM.mjs"
+import { addClass } from "../dom/DOMUtil.mjs"
+import { hexToRgb, mergeData, classMixin, isTrue, trace, addTraceHandler } from "../core/Util.mjs";
+import { easeInOutQuint, easeOutStrong } from "../animation/Ease.mjs";
+import Message from "../ui/Message.mjs"
+import { Language, fallback, loadLanguage } from "../language/Language.mjs"
+import { I18NMixins } from "../language/I18NMixins.mjs";
+import Events from "../core/Events.mjs";
+import { makeConfig } from "../core/ConfigFactory.mjs"
+import { TimelineConfig } from "../core/TimelineConfig.mjs"
+import { TimeNav } from "../timenav/TimeNav.mjs"
+import * as Browser from "../core/Browser.mjs"
+import { Animate } from "../animation/Animate.mjs"
+import { StorySlider } from "../slider/StorySlider.mjs"
+import { MenuBar } from "../ui/MenuBar.mjs"
+import { loadCSS, loadJS } from "../core/Load.mjs";
 
 let script_src_url = null;
 if (document) {
