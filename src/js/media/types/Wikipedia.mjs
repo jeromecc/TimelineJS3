@@ -1,6 +1,6 @@
 import { Media } from "../Media.mjs";
-import { ajax } from "../../net/Net.mjs"
-import { getObjectAttributeByIndex } from "../../core/Util"
+import { ajax } from "../../net/Net.mjs";
+import { getObjectAttributeByIndex } from "../../core/Util.mjs";
 
 export default class Wikipedia extends Media {
 
